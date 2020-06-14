@@ -688,6 +688,9 @@ header::before {
   font-size: 14px;
   color: #566375;
 }
+.postItemImg {
+  overflow: hidden;
+}
 .home .postItemIcon {
   background: #1baf5d;
 }
@@ -1160,7 +1163,7 @@ footer {
   .recommended a {
     font-size: 0.7em;
   }
-  .popupContent{
+  .popupContent {
     min-height: 300px;
   }
   .shopNavBurger {
@@ -1214,11 +1217,11 @@ footer {
   .shopWrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "a b"
-    "c c";
+    grid-template-areas:
+      "a b"
+      "c c";
   }
-  .navMiddle{
+  .navMiddle {
     grid-area: b;
   }
   .navFilter {
@@ -1226,7 +1229,7 @@ footer {
     grid-area: c;
     align-self: center;
   }
-  .shopNav{
+  .shopNav {
     height: 120px;
   }
 }
@@ -1262,26 +1265,27 @@ footer {
   .footerIcons {
     width: 100%;
   }
-  .place, .affair{
+  .place,
+  .affair {
     max-width: 150px;
     font-size: 12px;
     padding: 0 15px;
   }
-  .formFooterWrapper img{
+  .formFooterWrapper img {
     margin-right: -20px;
   }
-  .formFooterWrapper{
+  .formFooterWrapper {
     max-width: 300px;
   }
-  .formFooterWrapper input[placeholder]{
+  .formFooterWrapper input[placeholder] {
     width: 120px;
   }
-  .subscribe{
+  .subscribe {
     width: 70px;
     font-size: 10px;
     margin: 0 -10px 0 0;
   }
-  .subscribe::placeholder{
+  .subscribe::placeholder {
   }
 }
 @media (max-width: 440px) {
@@ -1308,8 +1312,11 @@ footer {
     grid-template-columns: repeat(2, minmax(150px, 240px));
     grid-template-rows: repeat(8, 240px);
   }
-  .postItemsWrapper h3, .postItemsWrapper p{
+  .postItemsWrapper h3,
+  .postItemsWrapper p {
     font-size: 10px;
   }
-  
+  .postItemHover {
+    height: 113px;
+  }
 }
